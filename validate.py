@@ -544,7 +544,7 @@ def main():
             print("\nERROR: The \"class_uid:\"", str(EVENT['class_uid']),"is not defined within OCSF", str(EVENT['metadata']['version']))
             sys.exit()
         # Pull OCSF Schema from browser
-        url = ('https://schema.ocsf.io/' + str(EVENT['metadata']['version']) + '/schema/classes/' + url_class_name + '?profiles=' + urllib.parse.quote(url_profiles))
+        url = ('https://schema.ocsf.io/schema/' + str(EVENT['metadata']['version']) + '/classes/' + url_class_name + '?profiles=' + urllib.parse.quote(url_profiles))
         response = requests.get(url)
         ocsf_schema = json.loads(json.dumps(response.json()))
         # Write OCSF Schema to file
