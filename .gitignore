@@ -1,5 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
 .DS_Store
-.venv
-output.txt
-samples/**/temp
-samples/**/schemas
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Output files
+*.experiment
+failed_events.json
+
+# Configuration files
+*_config.json
+
+# Temporary files
+*.tmp
