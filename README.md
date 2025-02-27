@@ -1,16 +1,18 @@
 # OCSF Data Validation Tool
 
-A robust validation tool for ensuring your data conforms to the Open Cybersecurity Schema Framework (OCSF) schemas. This tool helps security teams and developers validate their log data and event formats against the OCSF standard, which can be consumed in Amazon Security Lake.
+## About
 
-## Features
+A robust validation tool for ensuring your data conforms to the [Open Cybersecurity Schema Framework (OCSF)](https://schema.ocsf.io/) schemas. This tool helps security teams and developers validate their log data and event formats against the OCSF standard, which can be consumed in Amazon Security Lake.
 
-- Supports both JSON and Parquet file formats
-- Validates against OCSF schema using:
-  - OCSF Server API
+_Note: If you are still generating data using the release candidate version of OCSF `v1.0.0-rc.2`, please use the older version of this tool, available [here]()._ 
+
+### Features
+
+- Supports JSON, gzipped JSON and Parquet file formats.
+- Supports individual files or directories as input, locally or in S3.
+- Provides 2 options for validation:
+  - OCSF Server's validation API
   - JSON Schema Validation
-- Handles multiple input sources:
-  - Local files and directories
-  - Amazon S3 URIs
 
 ### Official Resources
 - [Amazon Security Lake Overview](https://aws.amazon.com/security-lake/)
