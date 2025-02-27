@@ -20,7 +20,7 @@ _Note: If you are still generating data using the release candidate version of O
 - [OCSF Schema Browser](https://schema.ocsf.io/)
 - [OCSF GitHub Org](https://github.com/ocsf)
 
-## Installation
+## Getting Started
 
 1. Clone the repository:
 
@@ -44,6 +44,14 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Configuration
+
+The first time you run the tool, you'll be guided through an interactive setup wizard to configure a few key items. These configuration settings are stored in `~/.ocsf_validator_config.json` and can be modified at any time. Key configuration options include:
+- Directory to store validation failure results
+- OCSF Server endpoint
+- Option to include warnings encountered during validation
+- Option to include full events that failed validation
+
 Validate a single file or directory:
 
 ```bash
@@ -62,15 +70,6 @@ Validate data from S3:
 ./ocsf_data_validator.py --input s3://bucket-name/dir/file.parquet --auto-jsonschema
 ```
 
-### Configuration
-
-The tool maintains configuration in `~/.ocsf_validator_config.json`. Key configuration options include:
-
-- Directory to store validation failure results
-- OCSF Server endpoint
-- Option to include warnings from the API validator
-- Option to include full events that failed validation
-
 To reset to default configuration:
 
 ```bash
@@ -81,7 +80,7 @@ python ocsf_data_validator.py --reset-config
 
 The validator generates detailed error reports:
 
-1. Console output (with --verbose flag)
+1. Console output (with `--verbose` flag)
 2. Detailed validation errors in `failed_events.json`
 
 #### Common Error types:
@@ -105,7 +104,7 @@ The `samples/` directory contains example OCSF-formatted data for testing:
 
 ### Schema Registry
 
-The tool includes a schema registry containing OCSF jsonschema definitions for `v1.4.0`. These schemas are used to validate the structure and content of your data.
+The tool includes a schema registry containing jsonschema definitions for OCSF `v1.4.0`. These schemas are used to validate the structure and content of your data.
 
 > Note: OCSF minor releases are backwards-compatible, meaning, we can use the latest stable version to validate data written using older minor versions in the `v1.0.0` release cycle.
 
