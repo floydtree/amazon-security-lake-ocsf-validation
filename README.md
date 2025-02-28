@@ -9,10 +9,10 @@ _Note: If you are still generating data using the release candidate version of O
 ### Features
 
 - Supports JSON, gzipped JSON and Parquet file formats.
-- Supports individual files or directories as input, locally or in S3.
+- Supports individual files or directories as input, locally or in Amazon S3.
 - Provides 2 options for validation:
   - OCSF Server's validation API
-  - JSON Schema Validation
+  - JSON Schema validation
 
 ### Official Resources
 - [Amazon Security Lake Overview](https://aws.amazon.com/security-lake/)
@@ -29,7 +29,7 @@ git clone [repository-url]
 cd amazon-security-lake-ocsf-validation
 ```
 
-2. Create and activate a virtual environment (recommended):
+2. Create and activate a virtual environment (strongly recommended):
 
 ```bash
 python -m venv .venv
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 The first time you run the tool, you'll be guided through an interactive setup wizard to configure a few key items. These configuration settings are stored in `~/.ocsf_validator_config.json` and can be modified at any time. Key configuration options include:
 - Directory to store validation failure results
-- OCSF Server endpoint
+- Your own OCSF Server endpoint
 - Option to include warnings encountered during validation
 - Option to include full events that failed validation
 
