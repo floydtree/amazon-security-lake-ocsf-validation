@@ -25,6 +25,7 @@ Thumbs.db
 # Output files
 *.experiment
 failed_events.json
+output.txt
 
 # Configuration files
 *_config.json
