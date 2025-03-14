@@ -99,7 +99,7 @@ The validator generates detailed error reports:
 
 The `samples/` directory contains example OCSF-formatted data for testing:
 
-- `good-vpcflowlog-ocsf.json`: Valid VPC flow log in OCSF format
+- `good-4001.json`: Valid VPC flow log in OCSF format
 - Additional samples demonstrating various event types and edge cases
 
 ### Schema Registry
