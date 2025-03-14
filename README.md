@@ -55,19 +55,19 @@ The first time you run the tool, you'll be guided through an interactive setup w
 Validate a single file or directory:
 
 ```bash
-./ocsf_data_validator.py --input samples/bad-vpcflowlog-ocsf.json --auto-jsonschema --verbose
+python ocsf_data_validator.py --input samples/bad-4001.json --auto-jsonschema --verbose
 ```
 
 Enable verbose output for detailed validation information:
 
 ```bash
-./ocsf_data_validator.py --input samples/ --auto-jsonschema --verbose
+python ocsf_data_validator.py --input samples/ --auto-jsonschema --verbose
 ```
 
 Validate data from S3:
 
 ```bash
-./ocsf_data_validator.py --input s3://bucket-name/dir/file.parquet --auto-jsonschema
+python ocsf_data_validator.py --input s3://bucket-name/dir/file.parquet --auto-jsonschema
 ```
 
 To reset to default configuration:
