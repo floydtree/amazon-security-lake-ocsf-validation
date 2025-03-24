@@ -104,9 +104,7 @@ The `samples/` directory contains example OCSF-formatted data for testing:
 
 ### Schema Registry
 
-The tool includes a schema registry containing jsonschema definitions for OCSF `v1.4.0`. These schemas are used to validate the structure and content of your data.
-
-> Note: OCSF minor releases are backwards-compatible, meaning, we can use the latest stable version to validate data written using older minor versions in the `v1.0.0` release cycle.
+The tool includes a schema registry containing jsonschema definitions for OCSF released minor versions. (latest `v1.4.0`). These schemas are used to validate the structure and content of your data.
 
 ## Contributing
 
